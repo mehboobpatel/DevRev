@@ -5,7 +5,6 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 const APP_ID = process.env.DEVREV_APP_ID || 'APP_ID_NOT_FOUND';
-console.log(`Using APP_ID: ${APP_ID}`);
 
 // Serve static files like CSS, JS
 app.use(express.static(__dirname));
