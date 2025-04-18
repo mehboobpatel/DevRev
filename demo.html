@@ -2,18 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DevRev Chat Integration Demo</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudOps Support</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .container {
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #0078d4;
+      margin-bottom: 0.5rem;
+    }
+    .cta {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 1.0rem;
+      color: #161077;
+    }
+  </style>
   <script type="text/javascript" src="https://plug-platform.devrev.ai/static/plug.js"></script>
 </head>
 
 <body>
-  <h1>Maheboob Patel</h1>
-  <p>Aspiring DevRev Member</p>
-  <p>DevRev Chat Integrated Successfully!</p>
+  <div class="container">
+    <h1>CloudOps Support</h1>
+    <p>Your trusted cloud operations partner</p>
+    <div class="cta">
+      Got an issue? Need help?<br>
+      Chat with our team now! We are here just a click away on the chat icon at the bottom right corner.
+    </div>
+  </div>
+
+  <footer>
+    Made by Maheboob Patel - aspiring DevRev member
+  </footer>
 
   <script>
-
     window.plugSDK.init({
       app_id: '{{APP_ID}}'
     });
